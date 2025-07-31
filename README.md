@@ -1,6 +1,6 @@
 # SOC Analyst Virtual Home Lab
 
-##Introduction
+## Introduction
 I recently built a virtual home lab to sharpen my cybersecurity skills and gain hands-on experience with attack and defence simulations.
 
 As someone aiming for a role in cybersecurity, I know that just reading about attacks and defences won’t be enough. I need to show practical skills: launching attacks, analysing logs, monitoring alerts, and responding to incidents.
