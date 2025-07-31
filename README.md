@@ -31,8 +31,11 @@ https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
 3.	Follow the GUI installer to complete setup.
 
 After the installation, update the machine using the following command:
-**sudo apt update**
-**sudo apt upgrade -y**
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
 
 ## 3. Set Up Metasploitable 3
 Metasploitable 3 requires **Vagrant** and **VirtualBox** for setup:
