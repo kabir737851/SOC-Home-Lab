@@ -48,7 +48,7 @@ sudo apt install virtualbox vagrant git -y
 ### Clone the Metasploitable 3 repository:
 ```bash
 git clone https://github.com/rapid7/metasploitable3.git
-cd metasploitable3**
+cd metasploitable3
 ```
 ### Build and start the VM:
 ```bash
@@ -59,6 +59,53 @@ This process will download the Ubuntu 14.04 base box, install all required vulne
 **Ubuntu 14.04 Base Image:** https://releases.ubuntu.com/14.04/
 
 ## 4. Install and Configure Splunk
+1.	**Download Splunk (Free version):** https://www.splunk.com/en_us/download.html
+2.	**Download Splunk (Free version):** https://www.splunk.com/en_us/download.html
+3.	**Install on your preferred VM or host. Example (Ubuntu):**
+    ```bash
+    sudo apt install ./splunk-<version>-linux-2.6-amd64.deb
+    ```
+4.	**Start Splunk and set admin password:**
+    ```bash
+    sudo /opt/splunk/bin/splunk start --accept-license
+    ```
+6.	**Enable Splunk to start at boot:**
+    ```bash
+    sudo /opt/splunk/bin/splunk enable boot-start
+    ```
+8.	**Configure UDP port 517 as the data input in the Splunk Web UI:** **Settings → Data Inputs → UDP → Add New → Port: 517**
+   
+## 5. Configure Syslog on Metasploitable 3
+1.	Ensure rsyslog is installed:
+   ```bash
+   sudo apt-get update
+   sudo apt-get install rsyslog -y
+   ```
+3.	Edit the syslog config file:
+    ```bash
+    sudo nano /etc/rsyslog.conf
+    ```
+4.	Add the following line to forward logs to Splunk:
+    ```bash
+    *.*   @<splunk_server_ip>:517
+    ```
+5.	Restart the syslog service:
+    ```bash
+    sudo service rsyslog restart
+    ```
+## 6. Install Wireshark
+**Wireshark can be installed on your host or attacker VM:**
+   ```bash
+   sudo apt update
+   sudo apt install wireshark -y
+   ```
+**Download Wireshark:** https://www.wireshark.org/
+
+
+
+
+
+   	
 
 
 
