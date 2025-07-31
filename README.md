@@ -142,7 +142,7 @@ This report will cover:
 
 
 ## Conclusion
-This SOC Analyst Home Lab has given me a real-world Security Operations Centre experience in a virtual environment. It has been a game changer in building my blue team skills and boosting my confidence in log analysis, threat detection, and incident response. With future upgrades, I know it will evolve into an even more powerful platform for mastering and practicing advanced SOC techniques.
+This SOC Analyst Home Lab has given me a real-world Security Operations Centre experience in a virtual environment. It has been a game changer in building my blue team skills and boosting my confidence in log analysis, threat detection, and incident response. Building the home lab is not one time project. It’s a **long term investment** in learning with future upgrades, I know it will evolve into an **even more powerful platform for mastering and practicing advanced SOC techniques.**
 
 
 
