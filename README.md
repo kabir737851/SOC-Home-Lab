@@ -41,15 +41,19 @@ sudo apt upgrade -y
 Metasploitable 3 requires **Vagrant** and **VirtualBox** for setup:
 Install Prerequisites:
 ### On Ubuntu 
-**sudo apt update**
-**sudo apt install virtualbox vagrant git -y**
-
+```bash
+sudo apt update
+sudo apt install virtualbox vagrant git -y
+```
 ### Clone the Metasploitable 3 repository:
-**git clone https://github.com/rapid7/metasploitable3.git**
-**cd metasploitable3**
-
+```bash
+git clone https://github.com/rapid7/metasploitable3.git
+cd metasploitable3**
+```
 ### Build and start the VM:
-**vagrant up**
+```bash
+vagrant up
+```
 This process will download the Ubuntu 14.04 base box, install all required vulnerable services, and boot the VM.
 **Metasploitable 3 Repo:** https://github.com/rapid7/metasploitable3
 **Ubuntu 14.04 Base Image:** https://releases.ubuntu.com/14.04/
