@@ -123,6 +123,28 @@ This report will cover:
 **Stay tuned for the full documentation!**
 
 
+## Skills Developed
+- **Log Analysis:** Investigating events and correlating data in Splunk.
+- **Incident Response:** Building detection logic, triaging, and responding to threats.
+-** Packet Analysis:** Inspecting suspicious traffic in Wireshark.
+- **Blue Team Techniques:** Identifying attacker behaviour and strengthening defences.
+
+
+## Key Takeaways
+- Learned that log correlation is key, as Syslog + Splunk integration provided excellent visibility across the environment.
+- Discovered that packet analysis adds crucial context, with Wireshark helping trace attack patterns and confirm suspicious activity on the network.
+- Realized that hands-on practice is far more impactful than theory, with simulated attacks dramatically improving detection and response skills.
+- Understood the importance of end-to-end visibility, where collecting logs from multiple sources (system, network, and applications) significantly strengthened SOC capabilities.
+- Recognized that early detection reduces impact, as identifying Indicators of Compromise (IOCs) in the initial attack stages prevented escalation.
+- A threat-hunting mindset, proactively searching for anomalies and uncovering attacks before automated alerts triggered.
+- Learned that baselining normal activity is critical, since understanding what “normal” looks like made it easier to detect unusual behavior.
+- Understood the importance of incident documentation, as recording findings and response steps made future investigations faster and more accurate.
+
+
+## Conclusion
+This SOC Analyst Home Lab has given me a real-world Security Operations Centre experience in a virtual environment. It has been a game changer in building my blue team skills and boosting my confidence in log analysis, threat detection, and incident response. With future upgrades, I know it will evolve into an even more powerful platform for mastering and practicing advanced SOC techniques.
+
+
 
 
 
