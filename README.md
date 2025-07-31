@@ -101,6 +101,33 @@ This process will download the Ubuntu 14.04 base box, install all required vulne
    ```
 **Download Wireshark:** https://www.wireshark.org/
 
+## Attack Scenarios – Cyber Kill Chain Simulation
+To simulate real-world SOC activities, I planned 10 attack scenarios covering all stages of the cyber kill chain:
+- Reconnaissance: Nmap scanning, password spraying
+- Initial Access: Brute-force, Eternal Blue, phishing payloads (reverse shell)
+- Persistence & Privilege Escalation: SMB exploit, reverse shells
+- Lateral Movement: ARP spoofing (MITM)
+- Impact & Exfiltration: Ransomware simulation, DNS tunnelling
+
+Note on Detailed Attack Documentation
+Each attack scenario listed above was fully reproduced in the lab and analyzed as part of my SOC Analyst workflow.
+
+A detailed step-by-step report (with screenshots, detection logic, mitigation strategies, case report, Splunk dashboards, and Wireshark PCAP files) will be published in the coming days as part of a SOC Analyst Report Review.
+
+This report will cover:
+
+Exact attack reproduction steps (commands, payloads, and setups)
+
+Splunk dashboards and detection techniques
+
+Wireshark PCAP analysis and packet correlation
+
+Log analysis & incident timelines
+
+Incident response actions and hardening recommendations
+
+Stay tuned for the full documentation!
+
 
 
 
