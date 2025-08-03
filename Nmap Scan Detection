@@ -1,14 +1,2 @@
-# Steps Followed for Nmap Scan Detection Lab
 
-1. Run `ifconfig` on Kali Linux to check the IP.  
-   - IP: `192.168.177.129`
-2. On the Metasploitable machine, run `ifconfig` and note down `eth0` IP.  
-   - IP: `192.168.177.130`
-3. Test connectivity:  
-   - Kali → `ping 192.168.177.130`  
-   - Meta → `ping 192.168.177.129`
-4. Perform the Nmap scans:  
-   ```bash
-   nmap -sV 192.168.177.130
-   nmap -A 192.168.177.130
 
