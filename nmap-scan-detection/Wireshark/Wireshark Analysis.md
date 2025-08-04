@@ -32,7 +32,7 @@ Excludes any replies (ensures this is the first packet of the 3-way handshake).
 ## Result: 
 This filter revealed multiple SYN packets, It is a clear evidence of Nmap scanning.
 
-4) To determine whether a port is open or closed, I used this response filter:
+To determine whether a port is open or closed, I used this response filter:
 ``` bash
 ip.src == 192.168.177.130 && ip.dst == 192.168.177.129
 ```
