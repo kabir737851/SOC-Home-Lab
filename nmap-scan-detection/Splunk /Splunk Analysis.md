@@ -77,7 +77,7 @@ Yes, this needs to be escalated to the SOC level 2 (Incident Response) team.
 3) Perform a vulnerability assessment on the victim system (192.168.177.130) to identify any exposed or exploitable ports.
 4) Update SIEM use cases and correlation rules to ensure similar scanning patterns are detected and alerted on promptly.
    
-##Status: 
+## Status: 
 
 This incident has been escalated to the SOC L2 team for in-depth investigation and containment. Awaiting their findings and recommendations.
 
