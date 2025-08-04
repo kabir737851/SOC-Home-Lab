@@ -45,6 +45,12 @@ nmap -sV 192.168.177.130
 ## Logs Forwarding to Splunk & Packet Capture in Wreshark
 1) Metasploitable3 was configured to forward logs to Splunk via Syslog, allowing detection of the Nmap scan as a simulated SOC setup. 
 2) Additionally, Wireshark was used to capture all network traffic during the event, providing visibility into ICMP pings and the full port scan.
+
+Detailed analysis of Splunk logs and Wireshark captures is provided in their respective sections:
+
+1) Splunk Analysis
+2) Wireshark Analysis 
+
    
 
 
