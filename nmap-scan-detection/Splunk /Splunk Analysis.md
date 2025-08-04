@@ -48,9 +48,9 @@ index=main (192.168.177.129 OR 192.168.177.130)
 | search unique_hosts > 1 OR count > 20
 ```
 ## Query Explanation: 
-• This query searches the main index for logs involving the IP’s **192.168.177.129** or **192.168.177.130** excluding the event containing the dhclient and DHCP. 
-• It then calculates the number of unique_hosts and the total connection attempts count by src_ip. 
-• Finally, it filters to show only those where unique_hosts is greater than 20, which can indicate scanning activity.
+1) This query searches the main index for logs involving the IP’s **192.168.177.129** or **192.168.177.130** excluding the event containing the dhclient and DHCP. 
+2) It then calculates the number of unique_hosts and the total connection attempts count by src_ip. 
+3) Finally, it filters to show only those where unique_hosts is greater than 20, which can indicate scanning activity.
 
 ## True Positive: 
 • This is confirmed malicious activity because the source IP made a large number of scan attempts (143) in a short time.
