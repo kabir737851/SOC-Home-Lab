@@ -43,7 +43,7 @@ This filter shows how the victim responded to the attacker's SYN requests.
 ## Analyze TCP Flags (SYN-ACK = Open) for deeper inspection:
 1) Selected a response packet.
 2) Checked the TCP Flags field.
-3) Found Flags: 0x012 (SYN and ACK set).
+3) Found **Flags: 0x012** (SYN and ACK set).
 
 ### Explanation:
 1) SYN + ACK = Target port is open (responding as expected to connection attempts).
