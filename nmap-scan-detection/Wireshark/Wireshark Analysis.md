@@ -4,6 +4,9 @@ To confirm and analyze the Nmap scanning behavior at the packet level, I used Wi
 
 1) Started Wireshark on the** Kali machine** before running the **Nmap scan.**
 2) Selected the appropriate network interface and began the capture.
+
+https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/evidence/Nmap%20Packets%20Capture%20.pcapng
+
 3) Used the following display filter to view only initial connection attempts from the attacker:
 ``` bash
 ip.src == 192.168.177.129 && ip.dst == 192.168.177.130 && tcp.flags.syn == 1 && tcp.flags.ack == 0
