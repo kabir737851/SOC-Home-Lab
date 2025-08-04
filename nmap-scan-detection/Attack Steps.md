@@ -49,7 +49,11 @@ nmap -sV 192.168.177.130
 Detailed analysis of Splunk logs and Wireshark captures is provided in their respective sections:
 
 1) Splunk Analysis
-2) Wireshark Analysis 
+
+https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/Splunk%20/Splunk%20Analysis.md
+
+
+3) Wireshark Analysis 
 
    
 
