@@ -19,6 +19,7 @@ D) Which shows a neat table with time, IP, host, source, and the cleaned-up log 
 
 ## Created Splunk Dashboard  
 https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/evidence/Nmap%20Splunk%20Dashboard.pdf
+
 After verifying that logs were received correctly, I created a custom Splunk Dashboard named **nmap_scan_detection**
 I) This helps the SOC Analyst monitore suspicious traffic patterns in real time
 
