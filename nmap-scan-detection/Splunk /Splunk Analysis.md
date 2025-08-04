@@ -27,18 +27,18 @@ Case ID: INC-2025-0802-001
 Date/Time: 02 August 2025, 8:15 PM
 Reported By: SOC Analyst (L1) – Kabir Bagalkot
 
-Summary: 
+## Summary: 
 A security alert was triggered because the IP address 192.168.177.129 tried to connect to the 1 unique host (192.168.177.130) 143 times. This is an unusually high number of attempts and suggests someone might be scanning the network to find open ports or weakness.
 
-• Detection Details: 
-• Detection Type: Nmap Scan Detection
-• Source IP: 192.168.177.129 (Attacker – Kali Linux)
-• Destination IP: 192.168.177.130 (Victim – Metasploitable 3)
-• Count: 143 connection attempts
-• Unique Ports Scanned – 143
-• Unique Hosts Scanned – 1
-• Log Source: Syslog (forwarded to Splunk)
-• Detection Query:
+## Detection Details: 
+1) Detection Type: Nmap Scan Detection
+2) Source IP: 192.168.177.129 (Attacker – Kali Linux)
+3) Destination IP: 192.168.177.130 (Victim – Metasploitable 3)
+4) Count: 143 connection attempts
+5) Unique Ports Scanned – 143
+6) Unique Hosts Scanned – 1
+7) Log Source: Syslog (forwarded to Splunk)
+8) Detection Query:
 ```bash
 index=main (192.168.177.129 OR 192.168.177.130)
 | search NOT "dhclient" NOT "DHCP"
