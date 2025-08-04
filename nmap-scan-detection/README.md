@@ -36,9 +36,10 @@ nmap -sV 192.168.177.130
 3) This scan helped me identify open ports on the victim machine and provided information about the services running on those ports.
 
 ## Analyze Scan Results
-1) The scan returned a list of open and closed ports along with the versions of services running on each open port. 
-2) This marked the completion of the reconnaissance phase.
-3) 
+1) The scan returned a list of open and closed ports along with the versions of services running on each open port.
+<img width="911" height="362" alt="image" src="https://github.com/user-attachments/assets/1126599b-0d15-481c-8f18-cb1afbfc1e9e" />
+3) This marked the completion of the reconnaissance phase.
+4) I successfully gathered intelligence about the target system’s surface area for potential exploitation.
    
 
 
