@@ -17,7 +17,8 @@ B) It filters out common DHCP-related logs (**dhclient, DHCP**) to reduce noise.
 C) Then it creates a new field called details by cutting out everything before the text **metasploitable3-ub1404** from each log line.
 D) Which shows a neat table with time, IP, host, source, and the cleaned-up log message.
 
-## Created Splunk Dashboard  https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/evidence/Nmap%20Splunk%20Dashboard.pdf
+## Created Splunk Dashboard  
+https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/evidence/Nmap%20Splunk%20Dashboard.pdf
 After verifying that logs were received correctly, I created a custom Splunk Dashboard named **nmap_scan_detection**
 I) This helps the SOC Analyst monitore suspicious traffic patterns in real time
 
