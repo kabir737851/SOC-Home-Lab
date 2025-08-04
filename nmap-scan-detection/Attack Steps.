@@ -38,8 +38,13 @@ nmap -sV 192.168.177.130
 ## Analyze Scan Results
 1) The scan returned a list of open and closed ports along with the versions of services running on each open port.
 <img width="911" height="362" alt="image" src="https://github.com/user-attachments/assets/1126599b-0d15-481c-8f18-cb1afbfc1e9e" />
-3) This marked the completion of the reconnaissance phase.
-4) I successfully gathered intelligence about the target system’s surface area for potential exploitation.
+
+2) This marked the completion of the reconnaissance phase.
+3) I successfully gathered intelligence about the target system’s surface area for potential exploitation.
+
+## Logs Forwarding to Splunk & Packet Capture in Wreshark
+1) Metasploitable3 was configured to forward logs to Splunk via Syslog, allowing detection of the Nmap scan as a simulated SOC setup. 
+2) Additionally, Wireshark was used to capture all network traffic during the event, providing visibility into ICMP pings and the full port scan.
    
 
 
