@@ -21,7 +21,7 @@ D) Which shows a neat table with time, IP, host, source, and the cleaned-up log 
 https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/evidence/Nmap%20Splunk%20Dashboard.pdf
 
 After verifying that logs were received correctly, I created a custom Splunk Dashboard named **nmap_scan_detection**
-I) This helps the SOC Analyst monitore suspicious traffic patterns in real time
+1) This helps the SOC Analyst monitore suspicious traffic patterns in real time
 
 # SOC Analyst Case Report for Nmap Scan Detection
 
@@ -53,29 +53,33 @@ index=main (192.168.177.129 OR 192.168.177.130)
 3) Finally, it filters to show only those where unique_hosts is greater than 20, which can indicate scanning activity.
 
 ## True Positive: 
-• This is confirmed malicious activity because the source IP made a large number of scan attempts (143) in a short time.
+This is confirmed malicious activity because the source IP made a large number of scan attempts (143) in a short time.
 
 ## Analysis: 
-• After checking the Splunk logs and Wireshark packet captures, we confirmed that 192.168.177.129 made 143 connections attempts to different open ports on 192.168.177.130. 
+1) After checking the Splunk logs and Wireshark packet captures, we confirmed that 192.168.177.129 made 143 connections attempts to different open ports on 192.168.177.130. 
 
 src_ip                     host                        unque_hosts              count
 192.168.177.129            192.168.177.130                  1                    143
-• This behavior matches typical scanning activity (like Nmap scans) used by attackers to find weakness.
+
+2) This behavior matches typical scanning activity (like Nmap scans) used by attackers to find weakness.
 
 ## Escalation: 
 Yes, this needs to be escalated to the SOC level 2 (Incident Response) team. 
 
 ### Reason for Escalation:
-•	The attacker attempted connections to 143 ports within a short timeframe, which indicates targeted reconnaissance activity.
-•	Further forensic analysis is required to determine the attacker’s intent, the full scope of scanning activity and whether any exploitation attempts occurred.
-•	L2 SOC analysts will conduct deeper investigations, including correlating data with firewall, IDS/IPS, and endpoint logs, and will take containment actions as required.
+1) The attacker attempted connections to 143 ports within a short timeframe, which indicates targeted reconnaissance activity.
+2) Further forensic analysis is required to determine the attacker’s intent, the full scope of scanning activity and whether any exploitation attempts occurred.
+3) L2 SOC analysts will conduct deeper investigations, including correlating data with firewall, IDS/IPS, and endpoint logs, and will take containment actions as required.
 
 ## Proposed Action:
-•	Block or isolate the source IP (192.168.177.129) at the firewall to prevent further reconnaissance attempts.
-•	Review network-wide logs for any additional scanning or suspicious activity originating from this IP address.
-•	Perform a vulnerability assessment on the victim system (192.168.177.130) to identify any exposed or exploitable ports.
-•	Update SIEM use cases and correlation rules to ensure similar scanning patterns are detected and alerted on promptly.
-Status: This incident has been escalated to the SOC L2 team for in-depth investigation and containment. Awaiting their findings and recommendations.
+1) Block or isolate the source IP (192.168.177.129) at the firewall to prevent further reconnaissance attempts.
+2) Review network-wide logs for any additional scanning or suspicious activity originating from this IP address.
+3) Perform a vulnerability assessment on the victim system (192.168.177.130) to identify any exposed or exploitable ports.
+4) Update SIEM use cases and correlation rules to ensure similar scanning patterns are detected and alerted on promptly.
+   
+##Status: 
+
+This incident has been escalated to the SOC L2 team for in-depth investigation and containment. Awaiting their findings and recommendations.
 
 
 
