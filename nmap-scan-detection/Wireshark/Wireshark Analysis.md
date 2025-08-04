@@ -3,7 +3,7 @@
 To confirm and analyze the Nmap scanning behavior at the packet level, I used Wireshark to inspect the traffic between the attacker (Kali) and the victim (Metasploitable3).
 
 1) Started Wireshark on the** Kali machine** before running the **Nmap scan.**
-2) Selected the appropriate network interface and began the capture.
+2) Selected the appropriate network interface and began the capture (Please refer to the capture wireshark file).
 
 https://github.com/kabir737851/SOC-Home-Lab/blob/main/nmap-scan-detection/evidence/Nmap%20Packets%20Capture%20.pcapng
 
