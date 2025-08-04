@@ -58,9 +58,11 @@ This is confirmed malicious activity because the source IP made a large number o
 ## Analysis: 
 After checking the Splunk logs and Wireshark packet captures, we confirmed that 192.168.177.129 made 143 connections attempts to different open ports on 192.168.177.130. 
 
-src_ip                     host                        unque_hosts              count
-192.168.177.129            192.168.177.130                  1                    143
-
+src_ip:  192.168.177.129 
+host: 192.168.177.130
+unique_host: 1
+count: 143
+           
 This behavior matches typical scanning activity (like Nmap scans) used by attackers to find weakness.
 
 ## Escalation: 
