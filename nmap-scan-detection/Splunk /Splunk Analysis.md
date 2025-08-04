@@ -56,12 +56,12 @@ index=main (192.168.177.129 OR 192.168.177.130)
 This is confirmed malicious activity because the source IP made a large number of scan attempts (143) in a short time.
 
 ## Analysis: 
-1) After checking the Splunk logs and Wireshark packet captures, we confirmed that 192.168.177.129 made 143 connections attempts to different open ports on 192.168.177.130. 
+After checking the Splunk logs and Wireshark packet captures, we confirmed that 192.168.177.129 made 143 connections attempts to different open ports on 192.168.177.130. 
 
 src_ip                     host                        unque_hosts              count
 192.168.177.129            192.168.177.130                  1                    143
 
-2) This behavior matches typical scanning activity (like Nmap scans) used by attackers to find weakness.
+This behavior matches typical scanning activity (like Nmap scans) used by attackers to find weakness.
 
 ## Escalation: 
 Yes, this needs to be escalated to the SOC level 2 (Incident Response) team. 
