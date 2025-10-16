@@ -18,7 +18,7 @@ This lab is fully virtualized, cost-effective, and can be set up using open-sour
 •	**Syslog:** Forwarding logs from the victim machine to SIEM.
 •	**Splunk:** SIEM platform for log analysis and incident detection.
 •	**Wireshark:** Network packet capture and analysis.
-•	**VMware Workstation:** Virtualization platform to run multiple VMs safely.
+•	**VMware Workstation:** A Virtualization platform to run multiple VMs safely.
 
 ## Setting Up the Lab
 **1. Install VMware Workstation**
@@ -127,7 +127,7 @@ This report will cover:
 - **Log Analysis:** Investigating events and correlating data in Splunk.
 - **Incident Response:** Building detection logic, triaging, and responding to threats.
 -** Packet Analysis:** Inspecting suspicious traffic in Wireshark.
-- **Blue Team Techniques:** Identifying attacker behaviour and strengthening defences.
+- **Blue Team Techniques:** Identifying attacker behavior and strengthening defenses.
 
 
 ## Key Takeaways
@@ -136,13 +136,13 @@ This report will cover:
 - Realized that hands-on practice is far more impactful than theory, with simulated attacks dramatically improving detection and response skills.
 - Understood the importance of end-to-end visibility, where collecting logs from multiple sources (system, network, and applications) significantly strengthened SOC capabilities.
 - Recognized that early detection reduces impact, as identifying Indicators of Compromise (IOCs) in the initial attack stages prevented escalation.
-- A threat-hunting mindset, proactively searching for anomalies and uncovering attacks before automated alerts triggered.
+- A threat-hunting mindset, proactively searching for anomalies and uncovering attacks before automated alerts are triggered.
 - Learned that baselining normal activity is critical, since understanding what “normal” looks like made it easier to detect unusual behavior.
 - Understood the importance of incident documentation, as recording findings and response steps made future investigations faster and more accurate.
 
 
 ## Conclusion
-This SOC Analyst Home Lab has given me a real-world Security Operations Centre experience in a virtual environment. It has been a game changer in building my blue team skills and boosting my confidence in log analysis, threat detection, and incident response. Building the home lab is not one time project. It’s a **long term investment** in learning with future upgrades, I know it will evolve into an **even more powerful platform for mastering and practicing advanced SOC techniques.**
+This SOC Analyst Home Lab has given me a real-world Security Operations Centre experience in a virtual environment. It has been a game-changer in building my blue team skills and boosting my confidence in log analysis, threat detection, and incident response. Building the home lab is not one-time project. It’s a **long-term investment** in learning with future upgrades, I know it will evolve into an **even more powerful platform for mastering and practicing advanced SOC techniques.**
 
 
 
