@@ -60,20 +60,19 @@ This process will download the Ubuntu 14.04 base box, install all required vulne
 
 ## 4. Install and Configure Splunk
 1.	**Download Splunk (Free version):** https://www.splunk.com/en_us/download.html
-2.	**Download Splunk (Free version):** https://www.splunk.com/en_us/download.html
-3.	**Install on your preferred VM or host. Example (Ubuntu):**
+2.	**Install on your preferred VM or host. Example (Ubuntu):**
     ```bash
     sudo apt install ./splunk-<version>-linux-2.6-amd64.deb
     ```
-4.	**Start Splunk and set admin password:**
+3.	**Start Splunk and set admin password:**
     ```bash
     sudo /opt/splunk/bin/splunk start --accept-license
     ```
-6.	**Enable Splunk to start at boot:**
+4.	**Enable Splunk to start at boot:**
     ```bash
     sudo /opt/splunk/bin/splunk enable boot-start
     ```
-8.	**Configure UDP port 517 as the data input in the Splunk Web UI:** **Settings → Data Inputs → UDP → Add New → Port: 517**
+5.	**Configure UDP port 517 as the data input in the Splunk Web UI:** **Settings → Data Inputs → UDP → Add New → Port: 517**
    
 ## 5. Configure Syslog on Metasploitable 3
 1.	Ensure rsyslog is installed:
